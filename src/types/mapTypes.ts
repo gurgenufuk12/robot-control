@@ -2,20 +2,20 @@ export interface MapData {
   info: {
     width: number;
     height: number;
-    resolution: number; // in meters
+    resolution: number;
     origin: {
       position: {
-        x: number; // in meters
-        y: number; // in meters
+        x: number;
+        y: number;
       };
     };
   };
-  data: number[]; // Occupancy grid data (0 = free, 100 = occupied, -1 = unknown)
+  data: number[];
 }
 
 export interface Position {
-  x: number; // The robot's x position (in pixels or meters depending on scaling)
-  y: number; // The robot's y position (in pixels or meters)
-  z: number; // The robot's z position (in pixels or meters)
-  orientation: number; // The robot's orientation in radians
+  x: number;
+  y: number;
+  z: number;
+  orientation: number;
 }
